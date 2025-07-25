@@ -1,0 +1,139 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Selamat Ulang Tahun Yulli</title>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Open+Sans&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Open Sans', sans-serif;
+      background: linear-gradient(to bottom, #ffe6f0, #fff0f5);
+      overflow: hidden;
+      text-align: center;
+      padding: 20px;
+      color: #4a4a4a;
+    }
+
+    h1 {
+      font-family: 'Great Vibes', cursive;
+      font-size: 3em;
+      color: #d81b60;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    h2 {
+      font-size: 1.5em;
+      color: #ad1457;
+      animation: fadeIn 2.5s ease-in-out;
+    }
+
+    p {
+      max-width: 700px;
+      margin: 20px auto;
+      font-size: 1.1em;
+      line-height: 1.8;
+      animation: fadeIn 3s ease-in-out;
+    }
+
+    .couple {
+      position: relative;
+      margin-top: 30px;
+      animation: fadeIn 3.5s ease-in-out;
+    }
+
+    .boy, .girl {
+      width: 100px;
+      height: 100px;
+      background-size: cover;
+      display: inline-block;
+    }
+
+    .boy {
+      background-image: url('https://cdn-icons-png.flaticon.com/512/3940/3940403.png');
+    }
+
+    .girl {
+      background-image: url('https://cdn-icons-png.flaticon.com/512/3940/3940412.png');
+    }
+
+    .heart {
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      background: url('https://cdn-icons-png.flaticon.com/512/833/833472.png') no-repeat center;
+      background-size: contain;
+      animation: float 5s infinite ease-in-out;
+      opacity: 0.8;
+    }
+
+    .heart:nth-child(1) { top: 80%; left: 10%; animation-delay: 0s; }
+    .heart:nth-child(2) { top: 90%; left: 30%; animation-delay: 1s; }
+    .heart:nth-child(3) { top: 85%; left: 50%; animation-delay: 2s; }
+    .heart:nth-child(4) { top: 90%; left: 70%; animation-delay: 3s; }
+    .heart:nth-child(5) { top: 80%; left: 90%; animation-delay: 4s; }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes float {
+      0%   { transform: translateY(0) scale(1); opacity: 0.8; }
+      50%  { transform: translateY(-100px) scale(1.2); opacity: 1; }
+      100% { transform: translateY(-200px) scale(0.9); opacity: 0; }
+    }
+
+    .button {
+      margin-top: 30px;
+      background-color: #d81b60;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 25px;
+      border: none;
+      cursor: pointer;
+      font-size: 1em;
+      transition: background 0.3s ease;
+      animation: fadeIn 4s ease-in-out;
+    }
+
+    .button:hover {
+      background-color: #c2185b;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Selamat Ulang Tahun Calon Istriku</h1>
+  <h2>YULLI SINTA DEWI – 27 Tahun</h2>
+
+  <p>
+    26 Juli 1998 – 26 Juli 2025<br>
+    MasyaAllah... kini engkau 27 tahun.<br>
+    Semoga menjadi pribadi yang lebih baik, lebih sabar, dan selalu dalam lindungan Allah SWT.
+  </p>
+
+  <p>
+    Maaf aku yang sering keras, pundungan, dan belum sempurna.<br>
+    Tapi insyaAllah dengan ikhtiar dan do’a, aku ingin menepati segalanya.<br>
+    Menuju hari bahagia kita, Ahad 30 November 2025, dalam ikatan suci pernikahan.
+  </p>
+
+  <div class="couple">
+    <div class="boy"></div>
+    <div class="girl"></div>
+  </div>
+
+  <!-- Floating Hearts -->
+  <div class="heart"></div>
+  <div class="heart"></div>
+  <div class="heart"></div>
+  <div class="heart"></div>
+  <div class="heart"></div>
+
+  <button class="button">Bismillah Menuju Halal</button>
+
+</body>
+</html>
